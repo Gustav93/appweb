@@ -96,12 +96,12 @@ dataSource:
     jmxExport: true
     driverClassName: com.mysql.jdbc.Driver
     username: root
-    password: asd
+    password: pass
 
 environments:
     development:
         dataSource:
-            dbCreate: create-drop
+            dbCreate: update
             dialect: org.hibernate.dialect.MySQL5InnoDBDialect
             url: jdbc:mysql://localhost:3306/appweb
     test:
